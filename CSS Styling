@@ -210,7 +210,15 @@ form#contact-form{
 
 .btn.btn-secondary.btn-lg.active {
     background: #333;
+    width: 35%;
+    padding: 10px 10px;
 }
+  
+.btn.btn-secondary.btn-lg.active:hover {
+    background: #444;
+    color: #333;
+}
+  
 #main-footer2{
     background: #333;
     color:#fff;
