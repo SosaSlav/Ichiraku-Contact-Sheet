@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/ichiraku_Style.css">
+        <title>List View</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1></h1>
+            </div>
+            <section id="showcase">
+                <div class="container">     
+                </div>
+            </section>
+            <nav id="navbar">
+                <div class="container">
+                    <ul>
+                        <li><a href="ichiraku_Form_view.html">Form View</a></li>
+                        <li><a href="ichiraku_List_view.html">List View</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            <div> 
+                <a href="ichiraku_Form_view.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Edit Contact</a>
+            </div>
+        </main>
+        <footer id="main-footer2">
+            <p>Copyright &copy; 2020 My Website</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>
+    
