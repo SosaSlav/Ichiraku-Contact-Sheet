@@ -1,0 +1,80 @@
+
+/* Universal Styling */
+body{
+    background-color:#fafafa;
+    color:rgb(44, 44, 44);
+    margin:0;
+    padding:0 0 60px;
+}
+
+header{
+    background-color:rgb(26, 22, 22);
+    padding-top: 20px;
+    background-image:url('../image/show.jpg');
+    background-position:center right;
+    min-height:300px;
+    margin-bottom:30px;
+}
+
+/* Form View Styling */
+
+form{
+    background: #333;
+    border-radius: 20px;
+    color:#fff;
+}
+
+/* First Name/Last Name Field Styling */
+
+.form-control {
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    border-color:#fff;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: rgb(255,255,255,.3);
+    border-color:#fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);
+}
+
+.form-control::placeholder{
+    color: rgb(255,255,255,.3);
+}
+
+/* Submit Form Button Styling */
+.table td,
+.table th {
+    vertical-align: middle;
+}
+  
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.response_msg{
+    margin-top:10px;
+    font-size:13px;
+    background:#E5D669;
+    color:#ffffff;
+    width:250px;
+    padding:3px;
+    display:none;
+}
+
+#loading-img{
+    display:none;
+}
+
+
+/* List View Styling */
+
+.table{
+    background-color: #c9c398;
+}
+.table thead th {
+    border-bottom: 2px solid #928d66;
+}

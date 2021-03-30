@@ -1,12 +1,8 @@
-const myForm = document.querySelector('.form-container');
-const nameInputFirst = document.querySelector('#firstName');
-const nameInputLast = document.querySelector('#lastName');
-const emailInput = document.querySelector('#email');
-const telephoneNumber = document.querySelector('#phone');
-const submitButton = document.querySelector('.btn');
+$(function(){
 
-$(document).ready(function(){
+  console.log( "HI I AM HERE ");
   
+  /*
   $("#contact-form").on("submit",function (e){
     
     e.preventDefault();
@@ -38,4 +34,5 @@ $(document).ready(function(){
     }
 
   });
+  */
 })
