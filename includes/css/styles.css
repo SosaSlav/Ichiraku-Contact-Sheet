@@ -9,8 +9,8 @@ body{
 
 header{
     background-color:rgb(26, 22, 22);
-    padding-top: 20px;
-    background-image:url('../image/show.jpg');
+    border: solid 20px rgb(0,0,0);
+    background-image:url('../images/show.jpg');
     background-position:center right;
     min-height:300px;
     margin-bottom:30px;
