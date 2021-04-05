@@ -33,7 +33,7 @@ form{
     border-color:#fff;
 }
 .form-control:focus {
-    color: #fff;
+    color: #fafafa;
     background-color: rgb(255,255,255,.3);
     border-color:#fff;
     outline: 0;
