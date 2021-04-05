@@ -1,3 +1,10 @@
+<cfscript>
+    // default value for create
+    param name="url.id" type="numeric" default=0;
+    // get my user
+    users = request.userBean.read( id: url.id );
+</cfscript>
+<cfoutput>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,26 +23,36 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ducimus aliquam nulla saepe praesentium repellendus. Quod veniam ipsum optio, modi culpa
                 </p>
-                <form name="contact-form" action="./" method="post" id="contact-form" class="text-center p-4">
+                <form name="contact-form" action="./actions.cfm" method="post" id="contact-form" class="text-center p-4">
+                    <input type="hidden" name="id" value="#val(users.id)#" />
                     <p>
                         <strong>Reservation List</strong>
                     </p>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
+                        <input type="text" class="form-control" name="firstName" value="#users.firstName#" placeholder="First Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
+                        <input type="text" class="form-control" name="lastName" value="#users.lastName#" placeholder="Last Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                        <input type="email" class="form-control" name="email" value="#users.email#" placeholder="Email Address" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" name="phone" placeholder="Telephone Number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" title="Ten digits code" required/>
+                        <input type="tel" class="form-control" name="phone" value="#users.phone#" placeholder="Telephone Number" pattern="[0-9]{3}\-[0-9]{3}\-[0-9]{4}" maxlength="12" title="Ten digits code" required/>
                     </div>
                     <div class="form-group m-0">
-                        <button type="submit" class="btn btn-dark" name="submit" id="submit_form">
-                            Submit
-                        </button>
+                        <cfif users.recordcount>
+                            <button type="submit" class="btn btn-dark" name="process" id="submit_form" value="update">
+                                UPDATE
+                            </button>
+                            <button type="submit" class="btn btn-danger" name="process" id="submit_form" value="delete">
+                                DELETE
+                            </button>
+                        <cfelse>
+                            <button type="submit" class="btn btn-dark" name="process" id="submit_form">
+                                CREATE
+                            </button>
+                        </cfif>
                     </div>
                 </form>
                 <div class="response_msg"></div>
@@ -49,3 +66,4 @@
         <script src="./includes/js/app.js"></script>
     </body>
 </html>
+</cfoutput>
